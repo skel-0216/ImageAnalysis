@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="152bf2ae-c50b-4136-b9ab-60f5e551e65c" name="Changes" comment="" />
+    <list default="true" id="152bf2ae-c50b-4136-b9ab-60f5e551e65c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/result/acc#1_00_body_bright_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_00_body_bright_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_00_body_bright_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_00_body_bright_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_00_body_bright_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_01_body_bright_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_01_body_bright_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_01_body_bright_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_01_body_bright_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_01_body_bright_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_02_body_bright_00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_02_body_bright_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_02_body_bright_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_02_body_bright_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/acc#1_02_body_bright_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/body/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage00/head/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/body/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage01/head/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/body/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/bright/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/bright/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/bright/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/bright/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/bright/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/dark/00.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/dark/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/dark/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/dark/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/stage02/head/dark/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/squid#1/새 텍스트 문서.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,11 +100,15 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27VLaHgtM82oBH2kNIgXkkgQW2i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
@@ -62,5 +145,19 @@
       <updated>1649400369320</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
