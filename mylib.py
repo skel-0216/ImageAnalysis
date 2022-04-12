@@ -27,13 +27,14 @@ def save_rgb_hist(path, resultname):
 
 
 def save_rgb_hist_accumulate(path, resultname):
-    img = cv2.imread(path)
-    color = ('b', 'g', 'r')
-    for i, col in enumerate(color):
-        histr = cv2.calcHist([img], [i], None, [256], [0, 256])
-        histr[0] = 0
-        plt.plot(histr, color=col)
-        plt.xlim([0, 256])
+    for paths in path:
+        img = cv2.imread(paths)
+        color = ('b', 'g', 'r')
+        for i, col in enumerate(color):
+            histr = cv2.calcHist([img], [i], None, [256], [0, 256])
+            histr[0] = 0
+            plt.plot(histr, color=col)
+            plt.xlim([0, 256])
     plt.savefig(resultname)
     return 0
 
