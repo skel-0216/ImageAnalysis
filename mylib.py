@@ -26,16 +26,38 @@ def save_rgb_hist(path, resultname):
     return 0
 
 
-def save_rgb_hist_accumulate(path, resultname):
-    for paths in path:
-        img = cv2.imread(paths)
+def save_rgb_hist_accumulate(paths, resultname, y=False):
+    for path in paths:
+        img = cv2.imread(path)
         color = ('b', 'g', 'r')
         for i, col in enumerate(color):
             histr = cv2.calcHist([img], [i], None, [256], [0, 256])
             histr[0] = 0
             plt.plot(histr, color=col)
             plt.xlim([0, 256])
+            if y is not False:
+                plt.ylim(y)
     plt.savefig(resultname)
+    plt.close()
+    return 0
+
+
+def save_hsv_hist(paths, resultname, y=(0, 20), range=(0, 180), color=False):
+    for path in paths:
+        sample_img = cv2.imread(path)
+        img_hsv = cv2.cvtColor(sample_img, cv2.COLOR_BGR2HSV)
+        h_, s_, v_ = cv2.split(img_hsv)
+        hist = cv2.calcHist([h_], [0], None, [256], [0, 256])
+        hist[0] = 00
+        # hist = (hist / sum(hist)) * 100
+        plt.xlim(range)
+        plt.ylim(y)
+        if color:
+            plt.plot(hist, color=color)
+        else:
+            plt.plot(hist)
+    plt.savefig(resultname)
+    plt.close()
     return 0
 
 
