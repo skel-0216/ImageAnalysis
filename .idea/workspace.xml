@@ -5,15 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152bf2ae-c50b-4136-b9ab-60f5e551e65c" name="Changes" comment="migrate to git">
-      <change afterPath="$PROJECT_DIR$/datas.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fish2hist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/h_spectrum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/datas.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/test.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/Rainbow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/h_spectrum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ImageAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageAnalysis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/excel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/squid#1/새 텍스트 문서.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rainbow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/datas.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/h_spectrum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +236,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
