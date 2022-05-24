@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152bf2ae-c50b-4136-b9ab-60f5e551e65c" name="Changes" comment="migrate to git">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/datas.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/result/test.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/Rainbow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/h_spectrum.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ImageAnalysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageAnalysis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rainbow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/datas.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/h_spectrum.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    <list default="true" id="152bf2ae-c50b-4136-b9ab-60f5e551e65c" name="Changes" comment="init on mac">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +207,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651741925072</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init on mac">
+      <created>1653380753671</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653380753671</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init on mac">
+      <created>1653380893802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653380893802</updated>
+    </task>
+    <task id="LOCAL-00005" summary="init on mac">
+      <created>1653380950124</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653380950124</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +245,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="migrate to git" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrate to git" />
+    <MESSAGE value="init on mac" />
+    <option name="LAST_COMMIT_MESSAGE" value="init on mac" />
   </component>
 </project>
