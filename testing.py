@@ -1,6 +1,12 @@
 import cv2
+import numpy as np
 
-img = cv2.imread('source/test.png')
+
+hsv = np.full((200, 200, 3), (125, 255, 255), dtype=np.uint8)
+
+img = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+
+
 cv2.imshow("img", img)
 cv2.waitKey()
-print(img)
+cv2.imwrite("result/img.png", img)

@@ -44,12 +44,15 @@ def save_rgb_hist_accumulate(paths, resultname, y=False):
 
 def save_hsv_hist(paths, resultname, y=(0, 20), range=(0, 180), color=False):
     for path in paths:
+        print(path)
         sample_img = cv2.imread(path)
         img_hsv = cv2.cvtColor(sample_img, cv2.COLOR_BGR2HSV)
         h_, s_, v_ = cv2.split(img_hsv)
         hist = cv2.calcHist([h_], [0], None, [256], [0, 256])
         hist[0] = 00
-        # hist = (hist / sum(hist)) * 100
+
+        hist = (hist / sum(hist)) * 100
+
         plt.xlim(range)
         plt.ylim(y)
         if color:
