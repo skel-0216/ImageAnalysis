@@ -4,9 +4,9 @@ import os
 import numpy as np
 from matplotlib import pyplot as plt
 
-test_path = "source/croaker#1/stage00/body/bright/01.png"
-
 # RGB 분석방식 결과가 깔끔하지 않다. 구조 자체가 수정 필요
+
+test_path = "source/croaker#1/stage00/body/bright/01.png"
 
 
 def createFolder(directory):
@@ -42,6 +42,7 @@ class Image:
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
 
+
     def rgb_hist(self, norm="Null"):
         color = ('b', 'g', 'r')
         result = []
@@ -65,6 +66,15 @@ class Image:
         if norm == "Percent":
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
+
+
+def get_representative_value(type_="mode"):
+
+    if type_ == "mode":
+        type_ = "m"
+
+
+    return 0
 
 
 image = Image(test_path)
