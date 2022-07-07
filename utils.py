@@ -2,8 +2,6 @@ import cv2
 import os
 import numpy as np
 
-import asset_filename
-
 # RGB 분석방식 결과가 깔끔하지 않다. 구조 자체가 수정 필요
 # 아니면 RGB hist 자체 return을 3개로 할까
 
