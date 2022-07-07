@@ -5,6 +5,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 # RGB 분석방식 결과가 깔끔하지 않다. 구조 자체가 수정 필요
+# 아니면 RGB hist 자체 return을 3개로 할까
 
 test_path = "source/croaker#1/stage00/body/bright/01.png"
 
@@ -42,7 +43,6 @@ class Image:
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
 
-
     def rgb_hist(self, norm="Null"):
         color = ('b', 'g', 'r')
         result = []
@@ -69,12 +69,13 @@ class Image:
 
 
 def get_representative_value(type_="mode"):
-
+    # 최빈값, 평균(절사평균), 중앙값
     if type_ == "mode":
-        type_ = "m"
-
-
-    return 0
+        return 0
+    elif type_ == "mean":   # trimmed mean
+        return 1
+    elif type_ == "median":
+        return 3
 
 
 image = Image(test_path)
