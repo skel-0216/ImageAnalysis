@@ -1,13 +1,13 @@
 import cv2
 import os
-
 import numpy as np
-from matplotlib import pyplot as plt
+
+import asset_filename
 
 # RGB 분석방식 결과가 깔끔하지 않다. 구조 자체가 수정 필요
 # 아니면 RGB hist 자체 return을 3개로 할까
 
-test_path = "source/croaker#1/stage00/body/bright/01.png"
+test_path = "source/mackerel#2/stage00/250/back/bright/01.png"
 
 
 def createFolder(directory):
@@ -29,6 +29,7 @@ class Image:
         h_, s_, v_ = cv2.split(self.__img_hsv)
         hist = cv2.calcHist([h_], [0], None, [256], [0, 256])[0:180]
         hist[0] = 00
+
         if norm == "Null":
             return hist
 
@@ -67,21 +68,20 @@ class Image:
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
 
-
-def get_representative_value(type_="mode"):
-    # 최빈값, 평균(절사평균), 중앙값
-    if type_ == "mode":
-        return 0
-    elif type_ == "mean":   # trimmed mean
-        return 1
-    elif type_ == "median":
-        return 3
+    def get_representative_value(self, type_="mode"):
+        if type_ == "mode":
+            h_, s_, v_ = cv2.split(self.__img_hsv)
+            vals, counts = np.unique(h_, return_counts=True)
+            counts[0] = 0   # remove black - this can remove pure red
+            index = np.argmax(counts)
+            return vals[index]
+        elif type_ == "mean":  # trimmed mean
+            return 1
+        elif type_ == "median":
+            return 3
 
 
 image = Image(test_path)
-print(image.hsv_hist().shape)
 
-plt.plot(image.hsv_hist())
-plt.show()
-
+print(image.get_representative_value())
 
