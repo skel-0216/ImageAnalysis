@@ -2,10 +2,11 @@ import cv2
 import os
 import numpy as np
 
+from openpyxl import Workbook
+
 # RGB 분석방식 결과가 깔끔하지 않다. 구조 자체가 수정 필요
 # 아니면 RGB hist 자체 return을 3개로 할까
-
-test_path = "source/mackerel#2/stage00/250/back/bright/01.png"
+import asset_filename
 
 
 def createFolder(directory):
@@ -66,20 +67,89 @@ class Image:
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
 
-    def get_representative_value(self, type_="mode"):
-        if type_ == "mode":
+    def get_representative_value(self, type="mode", value=1):
+        result = []
+        if type == "mode":
             h_, s_, v_ = cv2.split(self.__img_hsv)
             vals, counts = np.unique(h_, return_counts=True)
-            counts[0] = 0   # remove black - this can remove pure red
-            index = np.argmax(counts)
-            return vals[index]
-        elif type_ == "mean":  # trimmed mean
-            return 1
-        elif type_ == "median":
-            return 3
+
+            # value에 따라 값 여러개 나오게 하기
+            counts[0] = 0  # remove black - this can remove pure red
+
+            for i in range(int(value)):
+                # 최빈값 저장
+                index = np.argmax(counts)
+                result.append(vals[index])
+
+                # 저장한 최빈값 제거-> 이후 최빈값 검색에서 찾지 않도록
+                counts[index] = 0
+            return result
+
+        elif type == "mean":  # trimmed mean
+            h_, s_, v_ = cv2.split(self.__img_hsv)
+            vals, counts = np.unique(h_, return_counts=True)
+            temp = vals * counts
+            mean = sum(temp) / sum(counts)
+            return mean
 
 
-image = Image(test_path)
+def excel_write(rows, filename="result/excel/temp.xlsx"):
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "First Sheet"
 
-print(image.get_representative_value())
+    for i in rows:
+        ws.append(i)
+    wb.save(filename)
 
+
+def get_excel(case, value=180, filename=None):
+    data_list = [["stage00"]]
+
+    fish = 0
+    for imgs in case[0]:
+        image = Image(imgs)
+        item = image.get_representative_value(value=value)
+        data_list.append(['fish%d' % fish] + item)
+        fish += 1
+
+    fish = 0
+    data_list.append(["stage01"])
+    for imgs in case[1]:
+        image = Image(imgs)
+        item = image.get_representative_value(value=value)
+        data_list.append(['fish%d' % fish] + item)
+        fish += 1
+
+    if filename is not None:
+        excel_write(data_list, filename)
+    else:
+        excel_write(data_list)
+
+
+# image00 = Image(asset_filename.mackerel2_250_stomach_dark[0][0])
+# image01 = Image(asset_filename.mackerel2_250_stomach_dark[1][0])
+#
+# print(image00.get_representative_value(value=20))
+# print(image01.get_representative_value(value=20))
+
+# 15% is 27
+# 90th num is '중앙값'
+# 45th num is '4분위수'
+# value = 45
+#
+# for imgs in asset_filename.mackerel2_250_stomach_dark[0]:
+#     image = Image(imgs)
+#     item = image.get_representative_value(value=value)
+#     print(item, '  \t', sum(item)/value)
+#
+#
+# for imgs in asset_filename.mackerel2_250_stomach_dark[1]:
+#     image = Image(imgs)
+#     item = image.get_representative_value(value=value)
+#     print(item, '  \t', sum(item)/value)
+
+get_excel(asset_filename.mackerel2_250_stomach_dark, "result/excel/mackerel2_250_stomach_dark.xlsx")
+
+# 최빈값 찾긴 했는데.. 이건 그냥 피크 찾는거랑 같다.
+# 분산 정도에 따른 값은 없을까?
