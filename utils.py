@@ -1,6 +1,7 @@
 import cv2
 import os
 import numpy as np
+import math
 
 from openpyxl import Workbook
 
@@ -92,6 +93,36 @@ class Image:
             mean = sum(temp) / sum(counts)
             return mean
 
+    def get_hsv_var(self, norm="Null"):
+        temp = self.hsv_hist(norm=norm)
+        variance = np.var(temp)
+        return variance
+
+    def get_rgb_var(self, norm="Null"):
+        temp = self.rgb_hist(norm=norm)
+        variance = np.var(temp)
+        return variance
+
+    def get_hsv_std(self, norm="Null"):
+        temp = self.hsv_hist(norm=norm)
+        variance = np.std(temp)
+        return variance
+
+    def get_rgb_std(self, norm="Null"):
+        temp = self.rgb_hist(norm=norm)
+        variance = np.std(temp)
+        return variance
+
+    def temp_get_grade(self):
+        temp = self.hsv_hist(norm="Percent")
+        temp1 = temp[130:]
+        i = 50
+        sum = 0
+        for value in temp1:
+            sum += i * math.sqrt(value)
+            i -= 1
+        return sum / 100
+
 
 def excel_write(rows, filename="result/excel/temp.xlsx"):
     wb = Workbook()
@@ -127,6 +158,18 @@ def get_excel(case, value=180, filename=None):
         excel_write(data_list)
 
 
+def print_var_std(asset_list, norm="Null"):
+    for imgs in asset_list:
+        for img in imgs:
+            image = Image(img)
+            print(img, "   VAR : ", image.get_hsv_var(norm=norm))
+        print()
+        for img in imgs:
+            image = Image(img)
+            print(img, "   std : ", image.get_hsv_std(norm=norm))
+        print()
+
+
 # image00 = Image(asset_filename.mackerel2_250_stomach_dark[0][0])
 # image01 = Image(asset_filename.mackerel2_250_stomach_dark[1][0])
 #
@@ -149,7 +192,41 @@ def get_excel(case, value=180, filename=None):
 #     item = image.get_representative_value(value=value)
 #     print(item, '  \t', sum(item)/value)
 
-get_excel(asset_filename.mackerel2_250_stomach_dark, "result/excel/mackerel2_250_stomach_dark.xlsx")
+# get_excel(asset_filename.mackerel2_250_stomach_dark, "result/excel/mackerel2_250_stomach_dark.xlsx")
 
 # 최빈값 찾긴 했는데.. 이건 그냥 피크 찾는거랑 같다.
 # 분산 정도에 따른 값은 없을까?
+
+# 데이터 엑셀에 정리
+
+# get_excel(asset_filename.mackerel2_250_stomach_dark, filename="result/excel/mackerel2_250_stomach_dark.xlsx")
+# get_excel(asset_filename.mackerel2_250_stomach_bright, filename="result/excel/mackerel2_250_stomach_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel2_350_stomach_dark, filename="result/excel/mackerel2_350_stomach_dark.xlsx")
+# get_excel(asset_filename.mackerel2_350_stomach_bright, filename="result/excel/mackerel2_350_stomach_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel3_250_stomach_dark, filename="result/excel/mackerel3_250_stomach_dark.xlsx")
+# get_excel(asset_filename.mackerel3_250_stomach_bright, filename="result/excel/mackerel3_250_stomach_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel3_350_stomach_dark, filename="result/excel/mackerel3_350_stomach_dark.xlsx")
+# get_excel(asset_filename.mackerel3_350_stomach_bright, filename="result/excel/mackerel3_350_stomach_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel2_250_back_dark, filename="result/excel/mackerel2_250_back_dark.xlsx")
+# get_excel(asset_filename.mackerel2_250_back_bright, filename="result/excel/mackerel2_250_back_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel2_350_back_dark, filename="result/excel/mackerel2_350_back_dark.xlsx")
+# get_excel(asset_filename.mackerel2_350_back_bright, filename="result/excel/mackerel2_350_back_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel3_250_back_dark, filename="result/excel/mackerel3_250_back_dark.xlsx")
+# get_excel(asset_filename.mackerel3_250_back_bright, filename="result/excel/mackerel3_250_back_bright.xlsx")
+#
+# get_excel(asset_filename.mackerel3_350_back_dark, filename="result/excel/mackerel3_350_back_dark.xlsx")
+# get_excel(asset_filename.mackerel3_350_back_bright, filename="result/excel/mackerel3_350_back_bright.xlsx")
+
+# print_var_std(asset_filename.mackerel2_350_stomach_dark, norm="Percent")
+
+for imgs in asset_filename.mackerel3_250_stomach_dark:
+    for img in imgs:
+        image = Image(img)
+        print(image.temp_get_grade())
+    print()

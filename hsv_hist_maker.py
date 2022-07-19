@@ -43,33 +43,220 @@ def save_hsv_hist_img(path, dst_name, y=(0, 20), range=(0, 180), color=False, li
 # 피크 130 주변에서 보이다가 이동
 
 
-# # stage0, 350, stomach, dark
-# save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/01.png", "result/mackerel_result/stage00_350_stomach_dark_01.png")
-# save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/02.png", "result/mackerel_result/stage00_350_stomach_dark_02.png")
-# save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/03.png", "result/mackerel_result/stage00_350_stomach_dark_03.png")
-# save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/04.png", "result/mackerel_result/stage00_350_stomach_dark_04.png")
-# save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/05.png", "result/mackerel_result/stage00_350_stomach_dark_05.png")
-#
-# # stage1, 350, stomach, dark
-# save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/01.png", "result/mackerel_result/stage01_350_stomach_dark_01.png")
-# save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/02.png", "result/mackerel_result/stage01_350_stomach_dark_02.png")
-# save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/03.png", "result/mackerel_result/stage01_350_stomach_dark_03.png")
-# save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/04.png", "result/mackerel_result/stage01_350_stomach_dark_04.png")
-# save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/05.png", "result/mackerel_result/stage01_350_stomach_dark_05.png")
+def save_img_2_350_dark():
+    # stage0, 350, stomach, dark
+    print("do save_img_2_350_dark()")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/01.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/02.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/03.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/04.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/dark/05.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_05.png")
 
-# stage0, 350, stomach, bright
-save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/01.png", "result/mackerel_result/stage00_350_stomach_bright_01.png")
-save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/02.png", "result/mackerel_result/stage00_350_stomach_bright_02.png")
-save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/03.png", "result/mackerel_result/stage00_350_stomach_bright_03.png")
-save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/04.png", "result/mackerel_result/stage00_350_stomach_bright_04.png")
-save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/05.png", "result/mackerel_result/stage00_350_stomach_bright_05.png")
+    # stage1, 350, stomach, dark
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/01.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/02.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/03.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/04.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/dark/05.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_05.png")
 
-# stage1, 350, stomach, bright
-save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/01.png", "result/mackerel_result/stage01_350_stomach_bright_01.png")
-save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/02.png", "result/mackerel_result/stage01_350_stomach_bright_02.png")
-save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/03.png", "result/mackerel_result/stage01_350_stomach_bright_03.png")
-save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/04.png", "result/mackerel_result/stage01_350_stomach_bright_04.png")
-save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/05.png", "result/mackerel_result/stage01_350_stomach_bright_05.png")
+
+def save_img_2_350_bright():
+    # stage0, 350, stomach, bright
+    print("do save_img_2_350_bright()")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/bright/01.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/bright/02.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/bright/03.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/bright/04.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/350/stomach/bright/05.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/bright/01.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/bright/02.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/bright/03.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/bright/04.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/350/stomach/bright/05.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_05.png")
+
+
+def save_img_3_350_bright():
+    # stage0, 350, stomach, bright
+    print("do save_img_3_350_bright()")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/01.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/02.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/03.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/04.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/bright/05.png",
+                      "result/mackerel_result/stage00_350_stomach_bright_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/01.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/02.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/03.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/04.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/05.png",
+                      "result/mackerel_result/stage01_350_stomach_bright_05.png")
+
+
+def save_img_3_350_dark():
+    # stage0, 350, stomach, bright
+    print("do save_img_3_350_dark()")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/dark/01.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/dark/02.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/dark/03.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/dark/04.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/350/stomach/dark/05.png",
+                      "result/mackerel_result/stage00_350_stomach_dark_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/dark/01.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/dark/02.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/dark/03.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/dark/04.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/dark/05.png",
+                      "result/mackerel_result/stage01_350_stomach_dark_05.png")
+
+
+def save_img_2_250_dark():
+    # stage0, 350, stomach, dark
+    print("do save_img_2_250_dark()")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/dark/01.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/dark/02.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/dark/03.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/dark/04.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/dark/05.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_05.png")
+
+    # stage1, 350, stomach, dark
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/dark/01.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/dark/02.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/dark/03.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/dark/04.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/dark/05.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_05.png")
+
+
+def save_img_2_250_bright():
+    # stage0, 350, stomach, bright
+    print("do save_img_2_250_bright()")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/bright/01.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/bright/02.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/bright/03.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/bright/04.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage00/250/stomach/bright/05.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/bright/01.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/bright/02.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/bright/03.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/bright/04.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#2/stage01/250/stomach/bright/05.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_05.png")
+
+
+def save_img_3_250_bright():
+    # stage0, 350, stomach, bright
+    print("do save_img_3_250_bright()")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/bright/01.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/bright/02.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/bright/03.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/bright/04.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/bright/05.png",
+                      "result/mackerel_result/stage00_250_stomach_bright_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/bright/01.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/bright/02.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/bright/03.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/bright/04.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/bright/05.png",
+                      "result/mackerel_result/stage01_250_stomach_bright_05.png")
+
+
+def save_img_3_250_dark():
+    # stage0, 350, stomach, bright
+    print("do save_img_3_250_dark()")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/dark/01.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/dark/02.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/dark/03.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/dark/04.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage00/250/stomach/dark/05.png",
+                      "result/mackerel_result/stage00_250_stomach_dark_05.png")
+
+    # stage1, 350, stomach, bright
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/dark/01.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_01.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/dark/02.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_02.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/dark/03.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_03.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/dark/04.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_04.png")
+    save_hsv_hist_img("source/mackerel#3/stage01/250/stomach/dark/05.png",
+                      "result/mackerel_result/stage01_250_stomach_dark_05.png")
 
 # # stage0, 350, stomach, dark
 # mylib.save_hsv_hist(["source/mackerel#2/stage00/350/stomach/dark/01.png"], "result/mackerel_result/hist_stage00_350_stomach_dark_01.png")
@@ -84,3 +271,6 @@ save_hsv_hist_img("source/mackerel#3/stage01/350/stomach/bright/05.png", "result
 # mylib.save_hsv_hist(["source/mackerel#2/stage01/350/stomach/dark/03.png"], "result/mackerel_result/hist_stage01_350_stomach_dark_03.png")
 # mylib.save_hsv_hist(["source/mackerel#2/stage01/350/stomach/dark/04.png"], "result/mackerel_result/hist_stage01_350_stomach_dark_04.png")
 # mylib.save_hsv_hist(["source/mackerel#2/stage01/350/stomach/dark/05.png"], "result/mackerel_result/hist_stage01_350_stomach_dark_05.png")
+
+save_img_2_250_dark()
+save_img_2_250_bright()
