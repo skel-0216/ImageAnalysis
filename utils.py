@@ -1,4 +1,8 @@
-import cv2
+try:
+    from cv2 import cv2
+except ImportError:
+    pass
+
 import os
 import numpy as np
 import math
@@ -67,6 +71,12 @@ class Image:
         if norm == "Percent":
             norm_hist = (hist / sum(hist)) * 100
             return norm_hist
+
+    def black_mask(self):
+        th, img1 = cv2.threshold(self.__img, 0, 255, cv2.THRESH_BINARY)
+        print(th)
+        cv2.imshow("img", img1)
+        cv2.waitKey()
 
     def get_representative_value(self, type="mode", value=1):
         result = []
@@ -225,8 +235,11 @@ def print_var_std(asset_list, norm="Null"):
 
 # print_var_std(asset_filename.mackerel2_350_stomach_dark, norm="Percent")
 
-for imgs in asset_filename.mackerel3_250_stomach_dark:
-    for img in imgs:
-        image = Image(img)
-        print(image.temp_get_grade())
-    print()
+# for imgs in asset_filename.mackerel3_250_stomach_dark:
+#     for img in imgs:
+#         image = Image(img)
+#         print(image.temp_get_grade())
+#     print()
+
+img = Image(asset_filename.mackerel2_350_stomach_dark[0][0])
+img.black_mask()
