@@ -1,11 +1,9 @@
-try:
-    from cv2 import cv2
-except ImportError:
-    pass
+import cv2
 
 import os
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 from openpyxl import Workbook
 
@@ -73,10 +71,30 @@ class Image:
             return norm_hist
 
     def black_mask(self):
-        th, img1 = cv2.threshold(self.__img, 0, 255, cv2.THRESH_BINARY)
-        print(th)
-        cv2.imshow("img", img1)
-        cv2.waitKey()
+        temp = cv2.cvtColor(self.__img, cv2.COLOR_BGR2GRAY)
+        ret, mask = cv2.threshold(temp, 0, 255, cv2.THRESH_BINARY)
+        return mask
+
+    def eye_black_hist(self):
+        mask = self.black_mask()
+        temp = cv2.cvtColor(self.__img, cv2.COLOR_BGR2GRAY)
+        hist = cv2.calcHist([temp], [0], mask, [256], [0, 256])
+        hist = hist / sum(hist) * 100
+
+        return hist
+
+    def eye_rgb_hist(self):
+        mask = self.black_mask()
+
+        color = ('b', 'g', 'r')
+        result = []
+
+        for i, col in enumerate(color):
+            histr = cv2.calcHist([self.__img], [i], mask, [256], [0, 256])
+            histr = histr / sum(histr) * 100
+            result.append(histr)
+
+        return result[0], result[1], result[2]
 
     def get_representative_value(self, type="mode", value=1):
         result = []
@@ -241,5 +259,10 @@ def print_var_std(asset_list, norm="Null"):
 #         print(image.temp_get_grade())
 #     print()
 
-img = Image(asset_filename.mackerel2_350_stomach_dark[0][0])
-img.black_mask()
+img = Image("source/test2.png")
+hst1 = img.eye_black_hist()
+print(hst1)
+
+plt.subplot(111)
+plt.plot(hst1, color='b')
+plt.show()
