@@ -259,10 +259,3 @@ def print_var_std(asset_list, norm="Null"):
 #         print(image.temp_get_grade())
 #     print()
 
-img = Image("source/test2.png")
-hst1 = img.eye_black_hist()
-print(hst1)
-
-plt.subplot(111)
-plt.plot(hst1, color='b')
-plt.show()
