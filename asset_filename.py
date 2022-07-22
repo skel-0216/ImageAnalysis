@@ -478,6 +478,54 @@ mackerel2_350_stomach_dark = [["source/mackerel#2/stage00/350/stomach/dark/01.pn
                                "source/mackerel#2/stage01/350/stomach/dark/05.png"]
                               ]
 
+mackerel2_250_eye_bright = [["source/mackerel#2/stage00/250/eye/bright/01.png",
+                             "source/mackerel#2/stage00/250/eye/bright/02.png",
+                             "source/mackerel#2/stage00/250/eye/bright/03.png",
+                             "source/mackerel#2/stage00/250/eye/bright/04.png",
+                             "source/mackerel#2/stage00/250/eye/bright/05.png"],
+                            ["source/mackerel#2/stage01/250/eye/bright/01.png",
+                             "source/mackerel#2/stage01/250/eye/bright/02.png",
+                             "source/mackerel#2/stage01/250/eye/bright/03.png",
+                             "source/mackerel#2/stage01/250/eye/bright/04.png",
+                             "source/mackerel#2/stage01/250/eye/bright/05.png"]
+                            ]
+
+mackerel2_250_eye_dark = [["source/mackerel#2/stage00/250/eye/dark/01.png",
+                           "source/mackerel#2/stage00/250/eye/dark/02.png",
+                           "source/mackerel#2/stage00/250/eye/dark/03.png",
+                           "source/mackerel#2/stage00/250/eye/dark/04.png",
+                           "source/mackerel#2/stage00/250/eye/dark/05.png"],
+                          ["source/mackerel#2/stage01/250/eye/dark/01.png",
+                           "source/mackerel#2/stage01/250/eye/dark/02.png",
+                           "source/mackerel#2/stage01/250/eye/dark/03.png",
+                           "source/mackerel#2/stage01/250/eye/dark/04.png",
+                           "source/mackerel#2/stage01/250/eye/dark/05.png"]
+                          ]
+
+mackerel2_350_eye_bright = [["source/mackerel#2/stage00/350/eye/bright/01.png",
+                             "source/mackerel#2/stage00/350/eye/bright/02.png",
+                             "source/mackerel#2/stage00/350/eye/bright/03.png",
+                             "source/mackerel#2/stage00/350/eye/bright/04.png",
+                             "source/mackerel#2/stage00/350/eye/bright/05.png"],
+                            ["source/mackerel#2/stage01/350/eye/bright/01.png",
+                             "source/mackerel#2/stage01/350/eye/bright/02.png",
+                             "source/mackerel#2/stage01/350/eye/bright/03.png",
+                             "source/mackerel#2/stage01/350/eye/bright/04.png",
+                             "source/mackerel#2/stage01/350/eye/bright/05.png"]
+                            ]
+
+mackerel2_350_eye_dark = [["source/mackerel#2/stage00/350/eye/dark/01.png",
+                           "source/mackerel#2/stage00/350/eye/dark/02.png",
+                           "source/mackerel#2/stage00/350/eye/dark/03.png",
+                           "source/mackerel#2/stage00/350/eye/dark/04.png",
+                           "source/mackerel#2/stage00/350/eye/dark/05.png"],
+                          ["source/mackerel#2/stage01/350/eye/dark/01.png",
+                           "source/mackerel#2/stage01/350/eye/dark/02.png",
+                           "source/mackerel#2/stage01/350/eye/dark/03.png",
+                           "source/mackerel#2/stage01/350/eye/dark/04.png",
+                           "source/mackerel#2/stage01/350/eye/dark/05.png"]
+                          ]
+
 # =======================================================      mackerel 3      =======================================================
 
 mackerel3_250_back_bright = [["source/mackerel#3/stage00/250/back/bright/01.png",
@@ -575,3 +623,117 @@ mackerel3_350_stomach_dark = [["source/mackerel#3/stage00/350/stomach/dark/01.pn
                                "source/mackerel#3/stage01/350/stomach/dark/04.png",
                                "source/mackerel#3/stage01/350/stomach/dark/05.png"]
                               ]
+
+mackerel3_250_eye_bright = [["source/mackerel#3/stage00/250/eye/bright/01.png",
+                             "source/mackerel#3/stage00/250/eye/bright/02.png",
+                             "source/mackerel#3/stage00/250/eye/bright/03.png",
+                             "source/mackerel#3/stage00/250/eye/bright/04.png",
+                             "source/mackerel#3/stage00/250/eye/bright/05.png"],
+                            ["source/mackerel#3/stage01/250/eye/bright/01.png",
+                             "source/mackerel#3/stage01/250/eye/bright/02.png",
+                             "source/mackerel#3/stage01/250/eye/bright/03.png",
+                             "source/mackerel#3/stage01/250/eye/bright/04.png",
+                             "source/mackerel#3/stage01/250/eye/bright/05.png"]
+                            ]
+
+mackerel3_250_eye_dark = [["source/mackerel#3/stage00/250/eye/dark/01.png",
+                           "source/mackerel#3/stage00/250/eye/dark/02.png",
+                           "source/mackerel#3/stage00/250/eye/dark/03.png",
+                           "source/mackerel#3/stage00/250/eye/dark/04.png",
+                           "source/mackerel#3/stage00/250/eye/dark/05.png"],
+                          ["source/mackerel#3/stage01/250/eye/dark/01.png",
+                           "source/mackerel#3/stage01/250/eye/dark/02.png",
+                           "source/mackerel#3/stage01/250/eye/dark/03.png",
+                           "source/mackerel#3/stage01/250/eye/dark/04.png",
+                           "source/mackerel#3/stage01/250/eye/dark/05.png"]
+                          ]
+
+mackerel3_350_eye_bright = [["source/mackerel#3/stage00/350/eye/bright/01.png",
+                             "source/mackerel#3/stage00/350/eye/bright/02.png",
+                             "source/mackerel#3/stage00/350/eye/bright/03.png",
+                             "source/mackerel#3/stage00/350/eye/bright/04.png",
+                             "source/mackerel#3/stage00/350/eye/bright/05.png"],
+                            ["source/mackerel#3/stage01/350/eye/bright/01.png",
+                             "source/mackerel#3/stage01/350/eye/bright/02.png",
+                             "source/mackerel#3/stage01/350/eye/bright/03.png",
+                             "source/mackerel#3/stage01/350/eye/bright/04.png",
+                             "source/mackerel#3/stage01/350/eye/bright/05.png"]
+                            ]
+
+mackerel3_350_eye_dark = [["source/mackerel#3/stage00/350/eye/dark/01.png",
+                           "source/mackerel#3/stage00/350/eye/dark/02.png",
+                           "source/mackerel#3/stage00/350/eye/dark/03.png",
+                           "source/mackerel#3/stage00/350/eye/dark/04.png",
+                           "source/mackerel#3/stage00/350/eye/dark/05.png"],
+                          ["source/mackerel#3/stage01/350/eye/dark/01.png",
+                           "source/mackerel#3/stage01/350/eye/dark/02.png",
+                           "source/mackerel#3/stage01/350/eye/dark/03.png",
+                           "source/mackerel#3/stage01/350/eye/dark/04.png",
+                           "source/mackerel#3/stage01/350/eye/dark/05.png"]
+                          ]
+
+# =======================================================      croaker 1      =======================================================
+
+croaker1_eye_bright = [["source/croaker#1/stage00/eye/bright/01.png",
+                        "source/croaker#1/stage00/eye/bright/02.png",
+                        "source/croaker#1/stage00/eye/bright/03.png",
+                        "source/croaker#1/stage00/eye/bright/04.png",
+                        "source/croaker#1/stage00/eye/bright/05.png"],
+                       ["source/croaker#1/stage01/eye/bright/01.png",
+                        "source/croaker#1/stage01/eye/bright/02.png",
+                        "source/croaker#1/stage01/eye/bright/03.png",
+                        "source/croaker#1/stage01/eye/bright/04.png",
+                        "source/croaker#1/stage01/eye/bright/05.png"],
+                       ["source/croaker#2/stage01/eye/bright/01.png",
+                        "source/croaker#2/stage01/eye/bright/02.png",
+                        "source/croaker#2/stage01/eye/bright/03.png",
+                        "source/croaker#2/stage01/eye/bright/04.png",
+                        "source/croaker#2/stage01/eye/bright/05.png"],
+                       ["source/croaker#3/stage01/eye/bright/01.png",
+                        "source/croaker#3/stage01/eye/bright/02.png",
+                        "source/croaker#3/stage01/eye/bright/03.png",
+                        "source/croaker#3/stage01/eye/bright/04.png",
+                        "source/croaker#3/stage01/eye/bright/05.png"],
+                       ["source/croaker#4/stage01/eye/bright/01.png",
+                        "source/croaker#4/stage01/eye/bright/02.png",
+                        "source/croaker#4/stage01/eye/bright/03.png",
+                        "source/croaker#4/stage01/eye/bright/04.png",
+                        "source/croaker#4/stage01/eye/bright/05.png"],
+                       ["source/croaker#5/stage01/eye/bright/01.png",
+                        "source/croaker#5/stage01/eye/bright/02.png",
+                        "source/croaker#5/stage01/eye/bright/03.png",
+                        "source/croaker#5/stage01/eye/bright/04.png",
+                        "source/croaker#5/stage01/eye/bright/05.png"]
+                       ]
+
+croaker1_eye_dark = [["source/croaker#1/stage00/eye/dark/01.png",
+                      "source/croaker#1/stage00/eye/dark/02.png",
+                      "source/croaker#1/stage00/eye/dark/03.png",
+                      "source/croaker#1/stage00/eye/dark/04.png",
+                      "source/croaker#1/stage00/eye/dark/05.png"],
+                     ["source/croaker#1/stage01/eye/dark/01.png",
+                      "source/croaker#1/stage01/eye/dark/02.png",
+                      "source/croaker#1/stage01/eye/dark/03.png",
+                      "source/croaker#1/stage01/eye/dark/04.png",
+                      "source/croaker#1/stage01/eye/dark/05.png"],
+                     ["source/croaker#2/stage01/eye/dark/01.png",
+                      "source/croaker#2/stage01/eye/dark/02.png",
+                      "source/croaker#2/stage01/eye/dark/03.png",
+                      "source/croaker#2/stage01/eye/dark/04.png",
+                      "source/croaker#2/stage01/eye/dark/05.png"],
+                     ["source/croaker#3/stage01/eye/dark/01.png",
+                      "source/croaker#3/stage01/eye/dark/02.png",
+                      "source/croaker#3/stage01/eye/dark/03.png",
+                      "source/croaker#3/stage01/eye/dark/04.png",
+                      "source/croaker#3/stage01/eye/dark/05.png"],
+                     ["source/croaker#4/stage01/eye/dark/01.png",
+                      "source/croaker#4/stage01/eye/dark/02.png",
+                      "source/croaker#4/stage01/eye/dark/03.png",
+                      "source/croaker#4/stage01/eye/dark/04.png",
+                      "source/croaker#4/stage01/eye/dark/05.png"],
+                     ["source/croaker#5/stage01/eye/dark/01.png",
+                      "source/croaker#5/stage01/eye/dark/02.png",
+                      "source/croaker#5/stage01/eye/dark/03.png",
+                      "source/croaker#5/stage01/eye/dark/04.png",
+                      "source/croaker#5/stage01/eye/dark/05.png"]
+                     ]

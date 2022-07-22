@@ -80,8 +80,8 @@ class Image:
         temp = cv2.cvtColor(self.__img, cv2.COLOR_BGR2GRAY)
         hist = cv2.calcHist([temp], [0], mask, [256], [0, 256])
         hist = hist / sum(hist) * 100
-
-        return hist
+        result = hist.tolist()
+        return sum(result, [])
 
     def eye_rgb_hist(self):
         mask = self.black_mask()
@@ -92,7 +92,8 @@ class Image:
         for i, col in enumerate(color):
             histr = cv2.calcHist([self.__img], [i], mask, [256], [0, 256])
             histr = histr / sum(histr) * 100
-            result.append(histr)
+            temp = histr.tolist()
+            result.append(sum(temp, []))
 
         return result[0], result[1], result[2]
 
@@ -162,7 +163,7 @@ def excel_write(rows, filename="result/excel/temp.xlsx"):
     wb.save(filename)
 
 
-def get_excel(case, value=180, filename=None):
+def get_excel_old(case, value=180, filename=None):
     data_list = [["stage00"]]
 
     fish = 0
@@ -179,6 +180,34 @@ def get_excel(case, value=180, filename=None):
         item = image.get_representative_value(value=value)
         data_list.append(['fish%d' % fish] + item)
         fish += 1
+
+    if filename is not None:
+        excel_write(data_list, filename)
+    else:
+        excel_write(data_list)
+
+
+def get_excel(case, value=180, filename=None, type="stomach"):
+    count = 0
+    data_list = []
+    for i in range(len(case)):
+        data_list.append(["stage%2d" % count])
+        fish = 0
+        for imgs in case[i]:
+            image = Image(imgs)
+            item =[]
+            if type == "stomach":
+                item = image.get_representative_value(value=value)
+            elif type == "eye_gray":
+                item = image.eye_black_hist()
+            elif type == "eye_rgb":
+                item = image.eye_rgb_hist()
+            else:
+                print("ERROR  :: Occur")
+                return -1
+            data_list.append(['fish%d' % fish] + item)
+            fish += 1
+        count += 1
 
     if filename is not None:
         excel_write(data_list, filename)
@@ -259,3 +288,5 @@ def print_var_std(asset_list, norm="Null"):
 #         print(image.temp_get_grade())
 #     print()
 
+
+get_excel(asset_filename.mackerel3_350_eye_dark, filename="result/excel/mackerel_eyes_gray.xlsx", type="eye_gray")
