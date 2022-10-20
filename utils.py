@@ -75,15 +75,16 @@ class Image:
         ret, mask = cv2.threshold(temp, 0, 255, cv2.THRESH_BINARY)
         return mask
 
-    def eye_black_hist(self):
+    def gray_scale_hist(self, ratio="percent"):
         mask = self.black_mask()
         temp = cv2.cvtColor(self.__img, cv2.COLOR_BGR2GRAY)
         hist = cv2.calcHist([temp], [0], mask, [256], [0, 256])
-        hist = hist / sum(hist) * 100
+        if ratio == "percent":
+            hist = hist / sum(hist) * 100
         result = hist.tolist()
         return sum(result, [])
 
-    def eye_rgb_hist(self):
+    def rgb_scale_hist(self, ratio="percent"):
         mask = self.black_mask()
 
         color = ('b', 'g', 'r')
@@ -91,7 +92,8 @@ class Image:
 
         for i, col in enumerate(color):
             histr = cv2.calcHist([self.__img], [i], mask, [256], [0, 256])
-            histr = histr / sum(histr) * 100
+            if ratio == "percent":
+                histr = histr / sum(histr) * 100
             temp = histr.tolist()
             result.append(sum(temp, []))
 
@@ -187,7 +189,7 @@ def get_excel_old(case, value=180, filename=None):
         excel_write(data_list)
 
 
-def get_excel(case, value=180, filename=None, type="stomach"):
+def get_excel(case, value=180, filename=None, type="repr_val"):
     count = 0
     data_list = []
     for i in range(len(case)):
@@ -196,16 +198,20 @@ def get_excel(case, value=180, filename=None, type="stomach"):
         for imgs in case[i]:
             image = Image(imgs)
             item =[]
-            if type == "stomach":
+            if type == "repr_val":
                 item = image.get_representative_value(value=value)
-            elif type == "eye_gray":
-                item = image.eye_black_hist()
-            elif type == "eye_rgb":
-                item = image.eye_rgb_hist()
+                data_list.append(['fish%d' % fish] + item)
+            elif type == "gray":
+                item = image.gray_scale_hist()
+                data_list.append(['fish%d' % fish] + item)
+            elif type == "rgb":
+                hist_b, hist_g, hist_r = image.rgb_scale_hist()
+                data_list.append(['fish%d' % fish, ' r'] + hist_r)
+                data_list.append(['fish%d' % fish, ' g'] + hist_g)
+                data_list.append(['fish%d' % fish, ' b'] + hist_b)
             else:
                 print("ERROR  :: Occur")
                 return -1
-            data_list.append(['fish%d' % fish] + item)
             fish += 1
         count += 1
 
@@ -213,6 +219,17 @@ def get_excel(case, value=180, filename=None, type="stomach"):
         excel_write(data_list, filename)
     else:
         excel_write(data_list)
+
+
+def hist2mean(hist):
+    count = 0
+    sum = 0
+    for vals in hist:
+        sum += vals * count
+        count += 1
+
+    result = sum / np.sum(hist)
+    return result
 
 
 def print_var_std(asset_list, norm="Null"):
@@ -287,6 +304,15 @@ def print_var_std(asset_list, norm="Null"):
 #         image = Image(img)
 #         print(image.temp_get_grade())
 #     print()
+#
+# 평균값 뽑기
+# for names in asset_filename.squid1_body_bright:
+#     for name in names:
+#         temp_img = Image(name)
+#         print(name, " 's mean is... ", hist2mean(temp_img.gray_scale_hist(ratio="original")))
+
+get_excel(asset_filename.squid1_body_dark, filename="result/excel/squid_dark.xlsx", type="rgb")
 
 
-get_excel(asset_filename.mackerel3_350_eye_dark, filename="result/excel/mackerel_eyes_gray.xlsx", type="eye_gray")
+
+
