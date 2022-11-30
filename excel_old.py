@@ -6,14 +6,14 @@ from fish2hist import *
 
 # src_path_ = 'C:/Users/kms27/Desktop/GitHub/ImageAnalysis/source/'
 src_path_ = './source/'
-experiment_ = 'mackerel#4/'
+experiment_ = 'croaker#1'
 """
 stage_ = 'stage00/'
 size_ = '250/'
 position_ = 'stomach/'
 brightness_ = 'dark/'
 """
-img_num = ['00.tif', '01.tif', '02.tif', '03.tif', '04.tif', '05.tif']
+img_num = ['00.png', '01.png', '02.png', '03.png', '04.png']
 
 sheet_name = experiment_[:-1]
 
@@ -31,19 +31,23 @@ def write_mackerel(path_, work_sheet):
     return
 
 
-def write_squid(path_, work_sheet):
-    work_sheet.append([path_])
+def write_squid(title_, path_, work_sheet):
+    work_sheet.append([title_])
+    cnt = 0
     for i in range(0, 5):
         bgr = ['b', 'g', 'r']
-        for j in range(3):
-            temp_path = path_ + img_num[i]
-            temp_list = sum(squid2hist_BGR(cv2.imread(temp_path))[j].tolist(), [])
+        for paths in path_:
+            for path in paths:
+                cnt += 1
+                print(path)
+                for j in range(3):
+                    temp_list = sum(squid2hist_BGR(cv2.imread(path))[j].tolist(), [])
 
-            result_list = [img_num[i][:2] + ' squid ' + bgr[j]] + temp_list
+                    result_list = [img_num[i][:2] + ' croaker ' + bgr[j]] + temp_list
 
-            work_sheet.append(result_list)
+                    work_sheet.append(result_list)
+                work_sheet.append(['', ''])
         work_sheet.append(['', ''])
-    work_sheet.append(['', ''])
     work_sheet.append(['', ''])
     work_sheet.append(['', ''])
     return
@@ -71,6 +75,22 @@ ws = 0
 wb = Workbook()
 
 ws1_1 = wb.active
+title_1_1 = 'croaker_body_bright'
+ws1_1.title = title_1_1
+write_squid(title_1_1, asset_filename.croaker1_body_bright, ws1_1)
+
+title_1_2 = 'mackerel#4_body_dark'
+ws1_2 = wb.create_sheet(title_1_2)
+write_squid(title_1_2, asset_filename.croaker1_body_dark, ws1_2)
+
+wb.save("./excel/croaker_test.xlsx")
+
+
+"""
+ws = 0
+wb = Workbook()
+
+ws1_1 = wb.active
 title_1_1 = 'mackerel#4_continue_back_bright'
 ws1_1.title = title_1_1
 write_mackerel_stop(title_1_1, asset_filename.mackerel4_continue_back_bright, ws1_1)
@@ -89,6 +109,7 @@ write_mackerel_stop(title_2_2, asset_filename.mackerel4_continue_belly_dark, ws2
 
 
 wb.save("./excel/mackerel#4_continue_body.xlsx")
+"""
 
 
 """

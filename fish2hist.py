@@ -33,3 +33,4 @@ def squid2hist_BGR(src_image):
     hist[1] = (hist[1] / hist[1].sum()) * 100
     hist[2] = (hist[2] / hist[2].sum()) * 100
     return hist
+
